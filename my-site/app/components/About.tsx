@@ -53,11 +53,16 @@ export default function About() {
                             className="text-center md:text-left"
                         >
                             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                                I am a passionate Software Engineer with a deep focus on <strong className="text-white">Artificial Intelligence</strong> and <strong className="text-white">Machine Learning</strong>.
+                                I am a software engineer focused on building scalable web and mobile systems, with a strong emphasis on AI-driven and data-informed solutions. I enjoy designing end-to-end applications that combine clean system architecture, reliable backend services, and intelligent decision-making through data and machine learning.
+                            </p>
+                            <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                                I have hands-on experience developing backend APIs, full-stack web applications, and AI-integrated systems, using modern frameworks and cloud-based tools. I am organized, dependable, and comfortable taking ownership of features and delivering them within defined timelines.
+                            </p>
+                            <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                                I approach problem-solving with a practical engineering mindset, applying algorithms, system design principles, and data analysis to solve real-world challenges. I communicate effectively within teams and adapt quickly to new technologies and requirements.
                             </p>
                             <p className="text-lg text-gray-300 leading-relaxed">
-                                My journey involves exploring the depths of neural networks, data science, and building intelligent applications that solve real-world problems.
-                                I thrive on complex challenges and am constantly learning to stay at the cutting edge of technology.
+                                I am seeking a full-time software engineering role where I can contribute to building intelligent web and mobile products while continuously improving my skills in AI-driven system development.
                             </p>
                         </motion.div>
                     </div>
@@ -93,38 +98,97 @@ export default function About() {
                     </div>
 
                     {/* My Journey Section */}
-                    <div className="mt-24">
-                        <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center">My Journey</h3>
+                    <div className="mt-32">
+                        <h3 className="text-2xl md:text-3xl font-bold mb-20 text-center">My Journey</h3>
 
-                        <div className="relative border-l border-white/10 ml-6 md:ml-12 space-y-12">
-                            {/* Timeline Item 1: School */}
-                            <div className="relative pl-8 md:pl-12">
-                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_var(--color-primary)]"></div>
-                                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mb-2">
-                                    <span className="text-sm text-primary font-mono bg-primary/10 px-2 py-1 rounded">2015 - 2018</span>
-                                    <h4 className="text-xl font-semibold">High School</h4>
-                                </div>
-                                <p className="text-gray-400">Completed advanced studies in Mathematics and Physics, laying the groundwork for engineering.</p>
-                            </div>
+                        <div className="relative">
+                            {/* Connecting Line (Desktop) */}
+                            <div className="hidden md:block absolute top-[18px] left-0 w-full h-0.5 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 rounded-full"></div>
 
-                            {/* Timeline Item 2: University */}
-                            <div className="relative pl-8 md:pl-12">
-                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-secondary shadow-[0_0_10px_var(--color-secondary)]"></div>
-                                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mb-2">
-                                    <span className="text-sm text-secondary font-mono bg-secondary/10 px-2 py-1 rounded">2019 - 2023</span>
-                                    <h4 className="text-xl font-semibold">BSc in Computer Science</h4>
-                                </div>
-                                <p className="text-gray-400">Specialized in Artificial Intelligence and Machine Learning. Graduated with First Class Honours.</p>
-                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4">
+                                {/* Step 1: High School */}
+                                <div className="relative pt-0 md:pt-12 text-center md:text-left group">
+                                    {/* Dot */}
+                                    <div className="hidden md:flex absolute top-0 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-black border-4 border-primary items-center justify-center z-10 group-hover:scale-110 transition-transform shadow-[0_0_20px_var(--color-primary)]">
+                                        <div className="w-3 h-3 rounded-full bg-primary"></div>
+                                    </div>
 
-                            {/* Timeline Item 3: Professional */}
-                            <div className="relative pl-8 md:pl-12">
-                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent shadow-[0_0_10px_var(--color-accent)]"></div>
-                                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mb-2">
-                                    <span className="text-sm text-accent font-mono bg-accent/10 px-2 py-1 rounded">2023 - Present</span>
-                                    <h4 className="text-xl font-semibold">Software Engineer</h4>
+                                    <motion.div
+                                        whileHover={{ y: -5 }}
+                                        className="p-6 rounded-2xl glass border border-white/5 bg-white/5 hover:bg-white/10 transition-all duration-300 relative overflow-hidden h-full"
+                                    >
+                                        <div className="absolute top-0 right-0 p-3 opacity-10">
+                                            <Brain size={40} className="text-primary" />
+                                        </div>
+                                        <span className="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-mono mb-3 border border-primary/20">2019</span>
+                                        <h4 className="text-lg font-bold text-white mb-2">High School</h4>
+                                        <p className="text-sm font-semibold text-gray-300 mb-1">Lumbini College</p>
+                                        <p className="text-xs text-gray-400 leading-relaxed">Maths & Physics Background</p>
+                                    </motion.div>
                                 </div>
-                                <p className="text-gray-400">Currently building scalable web applications and integrating AI solutions to solve complex business problems.</p>
+
+                                {/* Step 2: University */}
+                                <div className="relative pt-0 md:pt-12 text-center md:text-left group">
+                                    {/* Dot */}
+                                    <div className="hidden md:flex absolute top-0 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-black border-4 border-secondary items-center justify-center z-10 group-hover:scale-110 transition-transform shadow-[0_0_20px_var(--color-secondary)]">
+                                        <div className="w-3 h-3 rounded-full bg-secondary"></div>
+                                    </div>
+
+                                    <motion.div
+                                        whileHover={{ y: -5 }}
+                                        className="p-6 rounded-2xl glass border border-white/5 bg-white/5 hover:bg-white/10 transition-all duration-300 relative overflow-hidden h-full"
+                                    >
+                                        <div className="absolute top-0 right-0 p-3 opacity-10">
+                                            <Cpu size={40} className="text-secondary" />
+                                        </div>
+                                        <span className="inline-block px-3 py-1 rounded-full bg-secondary/20 text-secondary text-xs font-mono mb-3 border border-secondary/20">2021 - 2025</span>
+                                        <h4 className="text-lg font-bold text-white mb-2">University</h4>
+                                        <p className="text-sm font-semibold text-gray-300 mb-1">IIT / Westminster</p>
+                                        <p className="text-xs text-gray-400 leading-relaxed">BSc (Hons) Computer Science. Upper Second Class.</p>
+                                    </motion.div>
+                                </div>
+
+                                {/* Step 3: Internship */}
+                                <div className="relative pt-0 md:pt-12 text-center md:text-left group">
+                                    {/* Dot */}
+                                    <div className="hidden md:flex absolute top-0 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-black border-4 border-accent items-center justify-center z-10 group-hover:scale-110 transition-transform shadow-[0_0_20px_var(--color-accent)]">
+                                        <div className="w-3 h-3 rounded-full bg-accent"></div>
+                                    </div>
+
+                                    <motion.div
+                                        whileHover={{ y: -5 }}
+                                        className="p-6 rounded-2xl glass border border-white/5 bg-white/5 hover:bg-white/10 transition-all duration-300 relative overflow-hidden h-full"
+                                    >
+                                        <div className="absolute top-0 right-0 p-3 opacity-10">
+                                            <Code size={40} className="text-accent" />
+                                        </div>
+                                        <span className="inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-mono mb-3 border border-accent/20">2023 - 2024</span>
+                                        <h4 className="text-lg font-bold text-white mb-2">Internship</h4>
+                                        <p className="text-sm font-semibold text-gray-300 mb-1">Sutra Technologies</p>
+                                        <p className="text-xs text-gray-400 leading-relaxed">Software Engineer Intern</p>
+                                    </motion.div>
+                                </div>
+
+                                {/* Step 4: Current Role */}
+                                <div className="relative pt-0 md:pt-12 text-center md:text-left group">
+                                    {/* Dot */}
+                                    <div className="hidden md:flex absolute top-0 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-black border-4 border-primary items-center justify-center z-10 group-hover:scale-110 transition-transform shadow-[0_0_20px_var(--color-primary)]">
+                                        <div className="w-3 h-3 rounded-full bg-primary"></div>
+                                    </div>
+
+                                    <motion.div
+                                        whileHover={{ y: -5 }}
+                                        className="p-6 rounded-2xl glass border border-white/5 bg-white/5 hover:bg-white/10 transition-all duration-300 relative overflow-hidden h-full"
+                                    >
+                                        <div className="absolute top-0 right-0 p-3 opacity-10">
+                                            <Brain size={40} className="text-primary" />
+                                        </div>
+                                        <span className="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-mono mb-3 border border-primary/20">Present</span>
+                                        <h4 className="text-lg font-bold text-white mb-2">Current Role</h4>
+                                        <p className="text-sm font-semibold text-gray-300 mb-1">Aurbyn</p>
+                                        <p className="text-xs text-gray-400 leading-relaxed">Software Engineer</p>
+                                    </motion.div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -10,7 +10,7 @@ const projects = [
         tags: ["Python", "PyTorch", "GANs", "React"],
         github: "#",
         demo: "#",
-        image: "/project1.jpg", // Placeholder
+        image: "/project1.jpg",
     },
     {
         title: "Predictive Analytics Dashboard",
@@ -18,7 +18,7 @@ const projects = [
         tags: ["Python", "TensorFlow", "D3.js", "Flask"],
         github: "#",
         demo: "#",
-        image: "/project2.jpg", // Placeholder
+        image: "/project2.jpg",
     },
     {
         title: "Natural Language Chatbot",
@@ -26,7 +26,55 @@ const projects = [
         tags: ["NLP", "HuggingFace", "FastAPI", "Next.js"],
         github: "#",
         demo: "#",
-        image: "/project3.jpg", // Placeholder
+        image: "/project3.jpg",
+    },
+    {
+        title: "E-Commerce Platform",
+        description: "A full-scale e-commerce application with secure payment gateways, user authentication, and inventory management.",
+        tags: ["Next.js", "Node.js", "Stripe", "MongoDB"],
+        github: "#",
+        demo: "#",
+        image: "/project4.jpg",
+    },
+    {
+        title: "Smart Traffic System",
+        description: "IoT-based system for optimizing traffic light timings using real-time computer vision data.",
+        tags: ["OpenCV", "Python", "IoT", "C++"],
+        github: "#",
+        demo: "#",
+        image: "/project5.jpg",
+    },
+    {
+        title: "Health & Fitness Tracker",
+        description: "Mobile application for tracking daily activity, diet, and sleep patterns with personalized AI insights.",
+        tags: ["React Native", "Firebase", "Redux", "AI"],
+        github: "#",
+        demo: "#",
+        image: "/project6.jpg",
+    },
+    {
+        title: "Portfolio Manager",
+        description: "Web application for managing investment portfolios, providing risk analysis and automated rebalancing suggestions.",
+        tags: ["Vue.js", "Django", "PostgreSQL", "Pandas"],
+        github: "#",
+        demo: "#",
+        image: "/project7.jpg",
+    },
+    {
+        title: "Social Media Analytics",
+        description: "Tool for analyzing engagement metrics across multiple platforms to optimize marketing strategies.",
+        tags: ["Python", "AWS", "Graphs", "Big Data"],
+        github: "#",
+        demo: "#",
+        image: "/project8.jpg",
+    },
+    {
+        title: "Automated Resumé Parser",
+        description: "NLP-powered tool to extract structured data from resumes for HR recruitment automation.",
+        tags: ["Spacy", "Python", "Rect", "Express"],
+        github: "#",
+        demo: "#",
+        image: "/project9.jpg",
     },
 ];
 
