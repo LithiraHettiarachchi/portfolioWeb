@@ -91,6 +91,43 @@ export default function About() {
                             </p>
                         </div>
                     </div>
+
+                    {/* My Journey Section */}
+                    <div className="mt-24">
+                        <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center">My Journey</h3>
+
+                        <div className="relative border-l border-white/10 ml-6 md:ml-12 space-y-12">
+                            {/* Timeline Item 1: School */}
+                            <div className="relative pl-8 md:pl-12">
+                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_var(--color-primary)]"></div>
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mb-2">
+                                    <span className="text-sm text-primary font-mono bg-primary/10 px-2 py-1 rounded">2015 - 2018</span>
+                                    <h4 className="text-xl font-semibold">High School</h4>
+                                </div>
+                                <p className="text-gray-400">Completed advanced studies in Mathematics and Physics, laying the groundwork for engineering.</p>
+                            </div>
+
+                            {/* Timeline Item 2: University */}
+                            <div className="relative pl-8 md:pl-12">
+                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-secondary shadow-[0_0_10px_var(--color-secondary)]"></div>
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mb-2">
+                                    <span className="text-sm text-secondary font-mono bg-secondary/10 px-2 py-1 rounded">2019 - 2023</span>
+                                    <h4 className="text-xl font-semibold">BSc in Computer Science</h4>
+                                </div>
+                                <p className="text-gray-400">Specialized in Artificial Intelligence and Machine Learning. Graduated with First Class Honours.</p>
+                            </div>
+
+                            {/* Timeline Item 3: Professional */}
+                            <div className="relative pl-8 md:pl-12">
+                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent shadow-[0_0_10px_var(--color-accent)]"></div>
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mb-2">
+                                    <span className="text-sm text-accent font-mono bg-accent/10 px-2 py-1 rounded">2023 - Present</span>
+                                    <h4 className="text-xl font-semibold">Software Engineer</h4>
+                                </div>
+                                <p className="text-gray-400">Currently building scalable web applications and integrating AI solutions to solve complex business problems.</p>
+                            </div>
+                        </div>
+                    </div>
                 </motion.div>
             </div>
         </section>
