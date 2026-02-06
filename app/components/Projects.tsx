@@ -42,20 +42,11 @@ const projects = [
         image: "https://i.ibb.co/TxMkQXw0/gesturei.jpg",
     },
     {
-        title: "Health & Fitness Tracker",
-        description: "Mobile application for tracking daily activity, diet, and sleep patterns with personalized AI insights.",
-        tags: ["React Native", "Firebase", "Redux", "AI"],
-        github: "#",
-        demo: "#",
-        image: "/project6.jpg",
-    },
-    {
-        title: "Portfolio Manager",
-        description: "Web application for managing investment portfolios, providing risk analysis and automated rebalancing suggestions.",
-        tags: ["Vue.js", "Django", "PostgreSQL", "Pandas"],
-        github: "#",
-        demo: "#",
-        image: "/project7.jpg",
+        title: "Skin Consultation Center",
+        description: "A system to manage doctors and patients skin consultation services.",
+        tags: ["Java", "Object Oriented Programming", "Swing"],
+        github: "https://github.com/LithiraHettiarachchi/skinConsultationCenter",
+        image: "https://i.ibb.co/1wtYXkq/skinconsult.jpg",
     },
 
 ];
