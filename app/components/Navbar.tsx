@@ -37,23 +37,23 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden md:flex items-center gap-12">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium hover:text-primary transition-colors relative group"
+                            className="text-sm font-medium text-gray-300 hover:text-white transition-colors relative group uppercase tracking-widest"
                         >
                             {link.name}
-                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full"></span>
                         </Link>
                     ))}
                     <a
                         href="/LithiraHettiarachchi_Resume.pdf"
                         download
-                        className="flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 border border-primary/50 text-primary rounded-full transition-all duration-300 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+                        className="flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] hover:scale-105"
                     >
-                        <Download size={16} />
+                        <Download size={18} />
                         Resume
                     </a>
                 </div>
