@@ -49,7 +49,7 @@ export default function Contact() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-                    <p className="text-gray-400">Have a project in mind? Let's collaborate.</p>
+                    <p className="text-gray-400">Want to learn more about me? Let’s connect and explore my work.</p>
                 </motion.div>
 
                 <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
@@ -130,7 +130,7 @@ export default function Contact() {
                                     rows={4}
                                     required
                                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors resize-none"
-                                    placeholder="Tell me about your project..."
+                                    placeholder="Type your message here..."
                                 ></textarea>
                             </div>
 
