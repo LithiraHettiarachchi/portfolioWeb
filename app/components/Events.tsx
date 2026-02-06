@@ -16,7 +16,7 @@ const events = [
         role: "Participant",
         date: "Aug 2025",
         location: "Virtual",
-        description: "",
+        description: "Participated in TechTriathlon 2025, a competitive hackathon where a team-based solution was developed to forecast paddy production using data-driven prediction techniques. The system leveraged historical and environmental data to improve yield estimation and support informed agricultural decision-making. The experience emphasized collaboration, rapid problem-solving, and applying AI-driven models to address real-world challenges in the agriculture sector.",
     },
 ];
 

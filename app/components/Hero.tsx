@@ -54,7 +54,7 @@ export default function Hero() {
                 </motion.div>
 
                 {/* 3D Scene Wrapper */}
-                <div className="relative h-[600px] w-full flex items-center justify-center -z-0">
+                <div className="relative h-[300px] md:h-[600px] w-full flex items-center justify-center -z-0">
                     <div className="absolute inset-0 w-full h-full">
                         <Suspense fallback={null}>
                             <Scene3D />

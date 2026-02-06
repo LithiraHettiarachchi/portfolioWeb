@@ -31,6 +31,7 @@ function NeuralCore() {
             <Icosahedron
                 ref={meshRef}
                 args={[2.5, 1]} // Radius, Detail
+                scale={viewport.width < 7 ? 0.6 : 1} // Scale down on smaller screens
                 onPointerOver={() => setHover(true)}
                 onPointerOut={() => setHover(false)}
             >

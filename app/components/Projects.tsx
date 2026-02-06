@@ -7,7 +7,7 @@ import Image from "next/image";
 const projects = [
     {
         title: "Olos Chat",
-        description: "An AI-powered conversational assistant designed to plug into websites and applications",
+        description: "An AI-powered conversational assistant designed to plug into websites and applications.",
         tags: ["Node.js", "Python", "VectorDB", "Next.js"],
         github: "https://github.com/LithiraHettiarachchi/OlosChat",
         demo: "#",
@@ -15,7 +15,7 @@ const projects = [
     },
     {
         title: "GridSense",
-        description: "An Analysis of Machine Learning and Time Series for Predicting EV Charging Demand with Traffic and Weather Data",
+        description: "An Analysis of Machine Learning and Time Series for Predicting EV Charging Demand with Traffic and Weather Data.",
         tags: ["Python", "Time-Series Modeling", "FastAPI", "Integration"],
         github: "https://github.com/LithiraHettiarachchi/gridSense",
         image: "https://i.ibb.co/XZLtsqyP/gridsense.jpg",
@@ -28,20 +28,18 @@ const projects = [
         image: "https://i.ibb.co/TDT87WW7/agriverse.jpg",
     },
     {
-        title: "E-Commerce Platform",
-        description: "A full-scale e-commerce application with secure payment gateways, user authentication, and inventory management.",
-        tags: ["Next.js", "Node.js", "Stripe", "MongoDB"],
-        github: "#",
-        demo: "#",
-        image: "/project4.jpg",
+        title: "Prettify",
+        description: "An AI-powered face beautification application that removes scars and blemishes while enhancing facial features.",
+        tags: ["Python", "Flutter", "MongoDB", "Docker", "YOLOv5"],
+        github: "https://github.com/kaveenSP/prettify",
+        image: "https://i.ibb.co/V02Lp1SL/prettify.jpg",
     },
     {
-        title: "Smart Traffic System",
-        description: "IoT-based system for optimizing traffic light timings using real-time computer vision data.",
-        tags: ["OpenCV", "Python", "IoT", "C++"],
-        github: "#",
-        demo: "#",
-        image: "/project5.jpg",
+        title: "GestureI",
+        description: "A gesture recognition model that accurately classifies English alphabets using sign language.",
+        tags: ["Python", "Tensorflow", "Keras", "OpenCV"],
+        github: "https://github.com/LithiraHettiarachchi/gestureRecognitionCNN",
+        image: "https://i.ibb.co/TxMkQXw0/gesturei.jpg",
     },
     {
         title: "Health & Fitness Tracker",
