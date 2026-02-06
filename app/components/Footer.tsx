@@ -7,7 +7,8 @@ export default function Footer() {
                     {/* Add social interaction later if needed */}
                     <a href="https://github.com/LithiraHettiarachchi" className="hover:text-white transition-colors">GitHub</a>
                     <a href="https://www.linkedin.com/in/lithirahettiarachchi/" className="hover:text-white transition-colors">LinkedIn</a>
-                    <a href="#" className="hover:text-white transition-colors">Twitter</a>
+                    <a href="https://www.researchgate.net/profile/Lithira-Hettiarachchi?ev=hdr_xprf
+                    " className="hover:text-white transition-colors">ResearchGate</a>
                 </div>
             </div>
         </footer>

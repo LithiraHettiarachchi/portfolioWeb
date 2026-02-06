@@ -57,22 +57,7 @@ const projects = [
         demo: "#",
         image: "/project7.jpg",
     },
-    {
-        title: "Social Media Analytics",
-        description: "Tool for analyzing engagement metrics across multiple platforms to optimize marketing strategies.",
-        tags: ["Python", "AWS", "Graphs", "Big Data"],
-        github: "#",
-        demo: "#",
-        image: "/project8.jpg",
-    },
-    {
-        title: "Automated Resumé Parser",
-        description: "NLP-powered tool to extract structured data from resumes for HR recruitment automation.",
-        tags: ["Spacy", "Python", "Rect", "Express"],
-        github: "#",
-        demo: "#",
-        image: "/project9.jpg",
-    },
+
 ];
 
 export default function Projects() {
