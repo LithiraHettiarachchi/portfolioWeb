@@ -16,7 +16,7 @@ const projects = [
     {
         title: "GridSense",
         description: "An Analysis of Machine Learning and Time Series for Predicting EV Charging Demand with Traffic and Weather Data.",
-        tags: ["Python", "Time-Series Modeling", "FastAPI", "Integration"],
+        tags: ["Python", "Time-Series Modeling", "Data Analysis", "FastAPI", "Integration"],
         github: "https://github.com/LithiraHettiarachchi/gridSense",
         image: "https://i.ibb.co/XZLtsqyP/gridsense.jpg",
     },
@@ -30,7 +30,7 @@ const projects = [
     {
         title: "Prettify",
         description: "An AI-powered face beautification application that removes scars and blemishes while enhancing facial features.",
-        tags: ["Python", "Flutter", "MongoDB", "Docker", "YOLOv5"],
+        tags: ["Python", "Flutter", "MongoDB", "Docker", "OpenCV", "YOLOv5"],
         github: "https://github.com/kaveenSP/prettify",
         image: "https://i.ibb.co/V02Lp1SL/prettify.jpg",
     },
@@ -42,20 +42,11 @@ const projects = [
         image: "https://i.ibb.co/TxMkQXw0/gesturei.jpg",
     },
     {
-        title: "Health & Fitness Tracker",
-        description: "Mobile application for tracking daily activity, diet, and sleep patterns with personalized AI insights.",
-        tags: ["React Native", "Firebase", "Redux", "AI"],
-        github: "#",
-        demo: "#",
-        image: "/project6.jpg",
-    },
-    {
-        title: "Portfolio Manager",
-        description: "Web application for managing investment portfolios, providing risk analysis and automated rebalancing suggestions.",
-        tags: ["Vue.js", "Django", "PostgreSQL", "Pandas"],
-        github: "#",
-        demo: "#",
-        image: "/project7.jpg",
+        title: "Skin Consultation Center",
+        description: "A system to manage doctors and patients skin consultation services.",
+        tags: ["Java", "Object Oriented Programming", "Swing"],
+        github: "https://github.com/LithiraHettiarachchi/skinConsultationCenter",
+        image: "https://i.ibb.co/1wtYXkq/skinconsult.jpg",
     },
 
 ];
