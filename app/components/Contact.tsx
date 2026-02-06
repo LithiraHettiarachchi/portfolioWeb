@@ -39,31 +39,31 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="py-20 relative">
+        <section id="contact" className="py-12 md:py-20 relative">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="text-center mb-10 md:mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Get In Touch</h2>
                     <p className="text-gray-400">Want to learn more about me? Let’s connect and explore my work.</p>
                 </motion.div>
 
-                <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+                <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12">
                     {/* Contact Info */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="space-y-8"
+                        className="space-y-6 md:space-y-8"
                     >
                         <div>
-                            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-                            <p className="text-gray-400 mb-8">
+                            <h3 className="text-xl md:text-2xl font-semibold mb-6">Contact Information</h3>
+                            <p className="text-gray-400 mb-8 text-sm md:text-base">
                                 I'm currently available for freelance work and full-time positions.
                                 If you have an exciting project or just want to say hi, feel free to drop a message!
                             </p>
@@ -71,22 +71,22 @@ export default function Contact() {
 
                         <div className="space-y-4">
                             <div className="flex items-center gap-4 text-gray-300">
-                                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-primary">
+                                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-primary shrink-0">
                                     <Mail size={20} />
                                 </div>
-                                <span>lithirahettiarachchi.info@gmail.com</span>
+                                <span className="text-sm md:text-base break-all">lithirahettiarachchi.info@gmail.com</span>
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
-                                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-secondary">
+                                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-secondary shrink-0">
                                     <Phone size={20} />
                                 </div>
-                                <span>+94 71 072 6355</span>
+                                <span className="text-sm md:text-base">+94 71 072 6355</span>
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
-                                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-accent">
+                                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-accent shrink-0">
                                     <MapPin size={20} />
                                 </div>
-                                <span>Colombo, Sri Lanka</span>
+                                <span className="text-sm md:text-base">Colombo, Sri Lanka</span>
                             </div>
                         </div>
                     </motion.div>
@@ -97,7 +97,7 @@ export default function Contact() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="glass p-8 rounded-2xl"
+                        className="glass p-6 md:p-8 rounded-2xl"
                     >
                         <form ref={form} onSubmit={sendEmail} className="space-y-6">
                             <div>
