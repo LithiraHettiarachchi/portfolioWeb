@@ -16,7 +16,7 @@ const projects = [
     {
         title: "GridSense",
         description: "An Analysis of Machine Learning and Time Series for Predicting EV Charging Demand with Traffic and Weather Data.",
-        tags: ["Python", "Time-Series Modeling", "FastAPI", "Integration"],
+        tags: ["Python", "Time-Series Modeling", "Data Analysis", "FastAPI", "Integration"],
         github: "https://github.com/LithiraHettiarachchi/gridSense",
         image: "https://i.ibb.co/XZLtsqyP/gridsense.jpg",
     },
@@ -30,7 +30,7 @@ const projects = [
     {
         title: "Prettify",
         description: "An AI-powered face beautification application that removes scars and blemishes while enhancing facial features.",
-        tags: ["Python", "Flutter", "MongoDB", "Docker", "YOLOv5"],
+        tags: ["Python", "Flutter", "MongoDB", "Docker", "OpenCV", "YOLOv5"],
         github: "https://github.com/kaveenSP/prettify",
         image: "https://i.ibb.co/V02Lp1SL/prettify.jpg",
     },
