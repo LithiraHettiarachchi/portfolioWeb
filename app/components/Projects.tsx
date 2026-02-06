@@ -2,31 +2,30 @@
 
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 const projects = [
     {
-        title: "AI Image Generator",
-        description: "A deep learning model capable of generating realistic images from text descriptions using GANs.",
-        tags: ["Python", "PyTorch", "GANs", "React"],
-        github: "#",
+        title: "Olos Chat",
+        description: "An AI-powered conversational assistant designed to plug into websites and applications",
+        tags: ["Node.js", "Python", "VectorDB", "Next.js"],
+        github: "https://github.com/LithiraHettiarachchi/OlosChat",
         demo: "#",
-        image: "/project1.jpg",
+        image: "https://i.ibb.co/4RN4xS1H/oloschat.jpg",
     },
     {
-        title: "Predictive Analytics Dashboard",
-        description: "Real-time dashboard for visualizing and predicting stock market trends using LSTM networks.",
-        tags: ["Python", "TensorFlow", "D3.js", "Flask"],
-        github: "#",
-        demo: "#",
-        image: "/project2.jpg",
+        title: "GridSense",
+        description: "An Analysis of Machine Learning and Time Series for Predicting EV Charging Demand with Traffic and Weather Data",
+        tags: ["Python", "Time-Series Modeling", "FastAPI", "Integration"],
+        github: "https://github.com/LithiraHettiarachchi/gridSense",
+        image: "https://i.ibb.co/XZLtsqyP/gridsense.jpg",
     },
     {
-        title: "Natural Language Chatbot",
-        description: "Customer support chatbot built with Transformer models, capable of context-aware conversations.",
-        tags: ["NLP", "HuggingFace", "FastAPI", "Next.js"],
-        github: "#",
-        demo: "#",
-        image: "/project3.jpg",
+        title: "AgriVerse",
+        description: "A smart paddy production prediction system for Sri Lankan Market.",
+        tags: ["Python", "Time-Series Modeling", "FastAPI", "JavaScript"],
+        github: "https://github.com/LithiraHettiarachchi/AgriVerse_RicePrediction",
+        image: "https://i.ibb.co/TDT87WW7/agriverse.jpg",
     },
     {
         title: "E-Commerce Platform",
@@ -104,8 +103,19 @@ export default function Projects() {
                             className="glass rounded-2xl overflow-hidden hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300 group"
                         >
                             <div className="h-48 bg-gray-800 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
-                                {/* Image placeholder - use a gradient for now if image missing */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900" />
+                                {project.image && (project.image.startsWith("http") || project.image.startsWith("/")) && !project.image.includes("project") ? (
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    />
+                                ) : (
+                                    <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center text-gray-500">
+                                        <span className="text-xs">Project Image</span>
+                                    </div>
+                                )}
                             </div>
                             <div className="p-6">
                                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
@@ -118,11 +128,8 @@ export default function Projects() {
                                     ))}
                                 </div>
                                 <div className="flex gap-4">
-                                    <a href={project.github} className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white transition-colors">
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white transition-colors">
                                         <Github size={16} /> Code
-                                    </a>
-                                    <a href={project.demo} className="flex items-center gap-2 text-sm font-medium text-accent hover:text-white transition-colors">
-                                        <ExternalLink size={16} /> Live Demo
                                     </a>
                                 </div>
                             </div>

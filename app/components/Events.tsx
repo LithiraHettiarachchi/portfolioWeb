@@ -5,25 +5,18 @@ import { Calendar, MapPin, Award } from "lucide-react";
 
 const events = [
     {
-        title: "Global AI Hackathon 2024",
-        role: "First Place Winner",
-        date: "Sep 2024",
-        location: "San Francisco, CA",
-        description: "Developed an innovative solution for early disease detection using computer vision.",
+        title: "AMCEHA 2025",
+        role: "Presenter",
+        date: "Mar 2025",
+        location: "University of Jaffna, Sri Lanka",
+        description: "Participated in AMCEHA 2025, presenting the research titled “An Analysis of Machine Learning and Time Series for Predicting EV Charging Demand with Traffic and Weather Data,” which focuses on predictive modeling for EV charging demand using traffic and weather data. The conference was held in collaboration with the Western Norwegian University of Applied Sciences, promoting international academic collaboration.",
     },
     {
-        title: "TechCrunch Disrupt",
-        role: "Speaker",
-        date: "Aug 2024",
+        title: "Tech-Triathlon 2025",
+        role: "Participant",
+        date: "Aug 2025",
         location: "Virtual",
-        description: "Presented research on 'Ethical AI Development in the Modern Era'.",
-    },
-    {
-        title: "Open Source Summit",
-        role: "Contributor",
-        date: "June 2024",
-        location: "Austin, TX",
-        description: "Contributed to major open-source machine learning libraries and networked with industry leaders.",
+        description: "",
     },
 ];
 
@@ -39,7 +32,7 @@ export default function Events() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Events & Achievements</h2>
-                    <p className="text-gray-400">Hackathons, Conferences, and Workshops</p>
+                    <p className="text-gray-400">Hackathons & Conferences</p>
                 </motion.div>
 
                 <div className="max-w-4xl mx-auto space-y-8">
