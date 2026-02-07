@@ -49,7 +49,7 @@ export default function Contact() {
                     className="text-center mb-10 md:mb-16"
                 >
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Get In Touch</h2>
-                    <p className="text-gray-400">Want to learn more about me? Let’s connect and explore my work.</p>
+                    <p className="text-gray-400">Want to hear more about me? Let’s connect and explore my work.</p>
                 </motion.div>
 
                 <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12">
