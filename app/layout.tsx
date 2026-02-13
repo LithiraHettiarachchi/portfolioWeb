@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <script src="https://www.api.dashify.aurbyn.com/sdk/dashify-analytics.js" data-api-key="dfy_ca27d415dda8e3e3b5edcc11376f6d7b6fa593d3b59121872895c440b344a68d" data-website-id="site_97892f9e32bf4797"></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
