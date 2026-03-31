@@ -1,4 +1,4 @@
-const BASE_URL = "https://www.api.dashify.aurbyn.com/api/v1";
+const BASE_URL = "https://api.dashify.aurbyn.com/api/v1";
 
 function slugify(text: string) {
   return text
