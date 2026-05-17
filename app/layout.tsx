@@ -28,7 +28,7 @@ export default function RootLayout({
       <head>
         {/* Clerion Consent Banner */}
         <Script
-          src="https://sdk.clerion.com/sdk/clerion-consent-banner.js"
+          src="https://api.getclerion.com/sdk/clerion-consent-banner.js"
           strategy="afterInteractive"
         />
         {/* Clerion Consent Initialization */}
@@ -48,7 +48,7 @@ export default function RootLayout({
         </Script>
         {/* Clerion Analytics SDK */}
         <Script
-          src="https://sdk.clerion.com/sdk/clerion-analytics.js"
+          src="https://api.getclerion.com/sdk/clerion-analytics.js"
           data-api-key="dfy_7b92a437106a4638895eb6e5da82eade"
           data-website-id="site_6134e73dec344585"
           data-website-name="Lithira Hettiarachchi Portfolio"
@@ -69,7 +69,51 @@ export default function RootLayout({
                 setTimeout(initClerionAnalytics, 50);
               }
             }
+            function sendClerionSiteDetails() {
+              var siteDetails = {
+                eventType: 'site_details',
+                websiteId: 'site_6134e73dec344585',
+                websiteName: 'Lithira Hettiarachchi Portfolio',
+                websiteDomain: window.location.hostname,
+                websiteUrl: window.location.origin,
+                pageTitle: document.title
+              };
+
+              function sendDirectly() {
+                try {
+                  fetch('https://api.getclerion.com/track/batch', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json'
+                    },
+                    keepalive: true,
+                    body: JSON.stringify({ events: [siteDetails] })
+                  }).catch(function(err) {
+                    console.warn('Clerion direct batch send failed:', err);
+                  });
+                } catch (err) {
+                  console.warn('Clerion direct batch send error:', err);
+                }
+              }
+
+              if (window.clerionAnalytics) {
+                if (typeof window.clerionAnalytics.track === 'function') {
+                  window.clerionAnalytics.track('site_details', siteDetails);
+                } else if (typeof window.clerionAnalytics.trackEvent === 'function') {
+                  window.clerionAnalytics.trackEvent(siteDetails);
+                } else if (typeof window.clerionAnalytics.sendBatch === 'function') {
+                  window.clerionAnalytics.sendBatch([siteDetails]);
+                } else if (typeof window.clerionAnalytics.send === 'function') {
+                  window.clerionAnalytics.send(siteDetails);
+                } else {
+                  sendDirectly();
+                }
+              } else {
+                sendDirectly();
+              }
+            }
             initClerionAnalytics();
+            setTimeout(sendClerionSiteDetails, 200);
           `}
         </Script>
       </head>
