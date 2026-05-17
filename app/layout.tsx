@@ -28,7 +28,7 @@ export default function RootLayout({
       <head>
         {/* Clerion Consent Banner */}
         <Script
-          src="http://localhost:5200/sdk/clerion-consent-banner.js"
+          src="https://sdk.clerion.com/sdk/clerion-consent-banner.js"
           strategy="afterInteractive"
         />
         {/* Clerion Consent Initialization */}
@@ -48,7 +48,7 @@ export default function RootLayout({
         </Script>
         {/* Clerion Analytics SDK */}
         <Script
-          src="http://localhost:5200/sdk/clerion-analytics.js"
+          src="https://sdk.clerion.com/sdk/clerion-analytics.js"
           data-api-key="dfy_7b92a437106a4638895eb6e5da82eade"
           data-website-id="site_6134e73dec344585"
           strategy="afterInteractive"
