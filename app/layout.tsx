@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,7 +26,33 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <script src="https://www.api.dashify.aurbyn.com/sdk/dashify-analytics.js" data-api-key="dfy_ca27d415dda8e3e3b5edcc11376f6d7b6fa593d3b59121872895c440b344a68d" data-website-id="site_97892f9e32bf4797"></script>
+        {/* Clerion Consent Banner */}
+        <Script
+          src="http://localhost:5200/sdk/clerion-consent-banner.js"
+          strategy="afterInteractive"
+        />
+        {/* Clerion Consent Initialization */}
+        <Script id="clerion-consent-init" strategy="afterInteractive">
+          {`
+            (function initClerion() {
+              if (window.clerionConsent) {
+                window.clerionConsent.init({
+                  apiKey: 'dfy_7b92a437106a4638895eb6e5da82eade',
+                  websiteId: 'site_6134e73dec344585'
+                });
+              } else {
+                setTimeout(initClerion, 50);
+              }
+            })();
+          `}
+        </Script>
+        {/* Clerion Analytics SDK */}
+        <Script
+          src="http://localhost:5200/sdk/clerion-analytics.js"
+          data-api-key="dfy_7b92a437106a4638895eb6e5da82eade"
+          data-website-id="site_6134e73dec344585"
+          strategy="afterInteractive"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
