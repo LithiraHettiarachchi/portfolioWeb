@@ -51,8 +51,27 @@ export default function RootLayout({
           src="https://sdk.clerion.com/sdk/clerion-analytics.js"
           data-api-key="dfy_7b92a437106a4638895eb6e5da82eade"
           data-website-id="site_6134e73dec344585"
+          data-website-name="Lithira Hettiarachchi Portfolio"
           strategy="afterInteractive"
         />
+        <Script id="clerion-analytics-init" strategy="afterInteractive">
+          {`
+            function initClerionAnalytics() {
+              if (window.clerionAnalytics) {
+                window.clerionAnalytics.init({
+                  apiKey: 'dfy_7b92a437106a4638895eb6e5da82eade',
+                  websiteId: 'site_6134e73dec344585',
+                  websiteName: 'Lithira Hettiarachchi Portfolio',
+                  websiteDomain: window.location.hostname,
+                  websiteUrl: window.location.origin
+                });
+              } else {
+                setTimeout(initClerionAnalytics, 50);
+              }
+            }
+            initClerionAnalytics();
+          `}
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
